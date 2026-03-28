@@ -1,8 +1,14 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body{
     font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .title{
     font-weight: 800;
@@ -18,5 +24,34 @@ body{
     max-width: 1280px;
     margin-inline: auto;
    
-  
+    
+}
+.countries-container{
+    max-width: 1280px;
+    padding: 24px;
+    display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   
+}
+.country-card{
+    width: 230px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+}
+.country-card img{
+    width: 100%;
+    padding: 0;
+}
+.country-card-text-item{
+    padding:  16px;
+}
+.country-card-text-item h3{
+    margin-bottom: 16px;
+}
+.country-card:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
