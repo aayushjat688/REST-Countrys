@@ -1,3 +1,5 @@
+
+
 let html = '';
 let countryContainer = document.querySelector('.countries-container')
 const countryCard = document.querySelector('.country-card')
@@ -7,6 +9,7 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,ca
 })
 .then((data)=>{
     data.forEach((country)=>{
+
         const flag = country.flags.svg;
         const name = country.name.official;
         const population = country.population;
@@ -18,7 +21,7 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,ca
 
          html += `
         <a href="
-        /country.html?
+        /country.html?name=${name}
         "><div class="country-card">
                 <img src="${flag}" alt="flag">
                  <div class="country-card-text-item">

@@ -1,3 +1,6 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
 .header-container{
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
    padding-inline: 24px;
@@ -8,4 +11,35 @@
     align-items: center;
     max-width: 1280px;
     margin-inline: auto; 
+    
+}
+main{
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 24px;
+    display:flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 3em;
+}
+main img{
+    width: 400px;
+    height: 300px;
+}
+.detail{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+footer{
+    text-align: center;
+    
+}
+footer button{
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
 }
