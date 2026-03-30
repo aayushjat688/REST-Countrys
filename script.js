@@ -11,11 +11,11 @@ fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,ca
     data.forEach((country)=>{
 
         const flag = country.flags.svg;
-        const name = country.name.official;
+        const name = country.name.common;
         const population = country.population;
         const region = country.region;
         const capital = country.capital;
-        
+       
         
         
 
