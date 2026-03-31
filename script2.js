@@ -26,7 +26,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
      <main>
         <img src="${country.flags.svg}" alt="">
          <div class="detail-main">
-            <h3>${country.name.official}</h3>
+            <h3>${country.name.common}</h3>
             <div class="detail">
                <div class="left-detail">
                  <p class="native-name"><strong>Native Name:</strong>${country.name.official}</p>

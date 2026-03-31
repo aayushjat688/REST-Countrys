@@ -13,16 +13,26 @@
     <header class="header-container">
         <div class="container">
                 <h2 class="title">Where in the world?</h2>
-        <p><i class="fa-regular fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
+        <p class="ddark"><i class="fa-regular fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
     </header>
-
+        
     <main>
+       
         <div class="search-filter-container">
            
             <div class="search-container">
                  <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search for a country...">
             </div>
+           
+             <select class="filter-by-region" >
+                <option hidden>select by region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
         </div>
         <div class="countries-container">
             <a href=""><div class="country-card">
