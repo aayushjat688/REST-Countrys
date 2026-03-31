@@ -1,5 +1,11 @@
 let html = '';
 let html2 = '';
+
+const darkMood = document.querySelector('.ddark')
+.addEventListener('click',()=>{
+    document.body.classList.toggle('dark');
+})
+
 const backButton = document.querySelector('.back-button')
 .addEventListener('click',()=>{
     history.back();
