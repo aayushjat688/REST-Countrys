@@ -8,11 +8,9 @@ const searchContainer = document.querySelector('.search-container input')
 let allCountriesData = '';
 
 const darkMood = document.querySelector('.ddark')
-if(body.classList.contains('dark')){
-    body.classList.remove('dark');
-}else{
-    body.classList.add('dark');
-}
+.addEventListener('click',()=>{
+    document.body.classList.toggle('dark');
+})
 
 
 fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital')
